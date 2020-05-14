@@ -1,12 +1,14 @@
-# CodeJam - SAP Cloud Platform Workflow
+# Virtual Event Pilot - SAP Cloud Platform Workflow
 
 ## Description
 
-This repository contains the material for the CodeJam on SAP Cloud Platform Workflow. Prerequisites and recommendations for this CodeJam are documented in the [prerequisites](prerequisites.md) file.
+This repository contains the material for the virtual event pilot on SAP Cloud Platform Workflow. Prerequisites and recommendations for this virtual event pilot are documented in the [prerequisites](prerequisites.md) file.
 
-### CodeJam overview
+### Virtual pilot overview
 
-This SAP Cloud Platform Workflow CodeJam brings together a number of SAP Cloud Platform topics, centred around the SAP Cloud Platform Workflow service, but also covers setting up the SAP Cloud Connector to establish connectivity to an on-prem environment, using the SAP Cloud Platform Portal service to create an SAP Fiori launchpad site, exploring the SAP API Business Hub and using the Workflow API directly. From the Workflow service perspective you'll create, deploy and extend a workflow definition, interact with tasks in the standard My Inbox app and monitor & inspect workflow instances, initiating them from the monitor itself and from a 3rd party application.
+This SAP Cloud Platform Workflow virtual event pilot is a _reduced version_ of content for a larger virtual event which brings together, over a series of ten exercises, a number of SAP Cloud Platform topics, centred around the SAP Cloud Platform Workflow service, but also covers setting up the SAP Cloud Connector to establish connectivity to an on-prem environment, using the SAP Cloud Platform Portal service to create an SAP Fiori launchpad site, exploring the SAP API Business Hub and using the Workflow API directly. From the Workflow service perspective you'll create, deploy and extend a workflow definition, interact with tasks in the standard My Inbox app and monitor & inspect workflow instances, initiating them from the monitor itself and from a 3rd party application.
+
+_In this reduced version, which will be run over two 2-hour sessions, exercises 1, 2, 3 and 4 will be covered, focusing on setting up of the tools & services in SAP Cloud Platform Cloud Foundry environment, establishing and configuring an SAP Cloud Connector, and creating and testing a destination that utilizes that Cloud Connector, via a simple app that requests data from an OData service._
 
 ### Material organization
 
@@ -14,7 +16,7 @@ The material consists of a series of exercises that are to be done in order (eac
 
 ### Following the exercises
 
-During the CodeJam you will complete each exercise one at a time. At the end of each exercise there are questions; these are designed to help you think about the content just covered, and are to be discussed with the entire CodeJam class, led by the instructor, when everyone has finished that exercise.
+During the virtual event you will complete each exercise one at a time. At the end of each exercise there are questions; these are designed to help you think about the content just covered, and are to be discussed with the entire class, led by the instructors, when everyone has finished that exercise.
 
 If you finish an exercise early, please resist the temptation to continue with the next one. Instead, explore what you've just done and see if you can find out more about the subject that was covered. That way we all stay on track together and can benefit from some reflection via the questions (and answers).
 
@@ -22,7 +24,7 @@ If you finish an exercise early, please resist the temptation to continue with t
 
 ### The exercises
 
-Here's an overview of the exercises in this CodeJam.
+Here's an overview of the exercises.
 
 - [Exercise 01 - Setting up for Workflow on Cloud Foundry](exercises/01/)
 - [Exercise 02 - Deploying the Workflow tools](exercises/02/)
@@ -43,11 +45,7 @@ You could also look at branching in the flow, based on decisions, using the Excl
 
 Events are also powerful features that you could investigate. For example, try controlling the flow of your workflow instances via remote API calls by making use of Intermediate Messages, that pause execution until an incoming message is received (via an API call).
 
-For more in-depth coverage of some of the topics in this CodeJam, you may find the blog post series [Discovering SCP Workflow](https://qmacro.org/2018/01/16/discovering-scp-workflow/) worth a look.
-
-### Feedback
-
-At the end of this CodeJam, we would be really grateful if you could spend a minute providing us with your thoughts in this [feedback form](https://bit.ly/codejam-workflow-feedback). Thank you.
+For more in-depth coverage of some of the topics in this virtual event, you may find the blog post series [Discovering SCP Workflow](https://qmacro.org/2018/01/16/discovering-scp-workflow/) worth a look.
 
 
 ## Requirements
@@ -62,7 +60,7 @@ You do not need to download this repository nor install anything from it. You ca
 
 ## How to obtain support
 
-Support for the content in this repository is available during CodeJam events, for which this content has been designed. Otherwise, this content is provided "as-is" with no other support.
+Support for the content in this repository is available during virtual events, for which this content has been designed. Otherwise, this content is provided "as-is" with no other support.
 
 
 ## License
