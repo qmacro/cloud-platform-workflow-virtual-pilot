@@ -4,7 +4,7 @@ There are hardware, software and service prerequisites for participating in this
 
 ## Hardware
 
-Each participant must have their own laptop with enough admin privileges to be able to install software. You must also be able to access a command line shell (e.g. `cmd.exe` on Windows). The laptop must also be able to connect to the host organization's guest network for Internet access, and have enough power for the whole day.
+Each participant must have their own laptop with enough admin privileges to be able to install software. You must also be able to access a command line shell (e.g. `cmd.exe` on Windows). The laptop must also be able to connect to the Internet.
 
 ## Software
 
