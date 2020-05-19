@@ -6,9 +6,9 @@ A destination is a collection of parameters that points to a remote service or r
 
 Once a destination is established, it can be used by apps and services related to that subaccount on the SAP Cloud Platform, which has a very capable [reverse proxy](https://en.wikipedia.org/wiki/Reverse_proxy) mechanism at the heart of the Connectivity service.
 
-In this case, for the business scenario upon which this CodeJam is based, the destination will be to a specific OData service providing information relating to an online shop.
+In this case, for the business scenario upon which this Virtual Event is based, the destination will be to a specific OData service providing information relating to an online shop.
 
-_Note: If you were unable to install Docker (as described in this CodeJam's [prerequisites](../../prerequisites.md)), you can still continue with this exercise - just follow the special "Without SAP Cloud Connector" instructions where appropriate. You can of course continue with subsequent exercises, as the destination effectively abstracts the actual connection details meaning you can treat it as a logical endpoint after it has been set up._
+_Note: If you were unable to install Docker (as described in this Virtual Event's [prerequisites](../../prerequisites.md)), you can still continue with this exercise - just follow the special "Without SAP Cloud Connector" instructions where appropriate. You can of course continue with subsequent exercises, as the destination effectively abstracts the actual connection details meaning you can treat it as a logical endpoint after it has been set up._
 
 ## Steps
 
@@ -18,7 +18,7 @@ After completing these steps you'll have created a destination pointing to a spe
 
 Before creating the destination, which is effectively a pointer to a data source, it's worth checking that data source manually and directly. First, so you can see for yourself what you're aiming to get to from within the SAP Cloud Platform, and second, so you know what you're looking for when you access that data source indirectly (through the destination).
 
-The data source is an OData service in the ES5 system, a system to which you should already have access according to the [services section of the prerequisites for this CodeJam](https://github.com/SAP-samples/cloud-workflow-codejam/blob/master/prerequisites.md#services).
+The data source is an OData service in the ES5 system, a system to which you should already have access according to the [services section of the prerequisites for this Virtual Event](https://github.com/SAP-samples/cloud-workflow-codejam/blob/master/prerequisites.md#services).
 
 :point_right: Open up the [EPM_REF_APPS_SHOP_SRV](https://sapes5.sapdevcenter.com/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/?sap-client=002) OData service, taking care to specify client 002 in the URL (following the link here will do that for you).
 
@@ -43,7 +43,7 @@ If you have an SAP Cloud Connector set up and connected as described in the prev
 | -------------          | ----------------------- |
 | Name                   | shopinfo                |
 | Type                   | HTTP                    |
-| Description            | CodeJam Shop Info       |
+| Description            | Virtual Event Shop Info       |
 | URL                    | `http://virtuales5:8000/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/` |
 | Proxy Type             | OnPremise               |
 | Location ID            | (leave blank)           |
@@ -62,7 +62,7 @@ _Note: Remember, we're only "pretending" that the ES5 system is on-prem; it is, 
 | -------------          | ----------------------- |
 | Name                   | shopinfo                |
 | Type                   | HTTP                    |
-| Description            | CodeJam Shop Info       |
+| Description            | Virtual Event Shop Info |
 | Location ID            | (leave blank)           |
 | URL                    | `https://sapes5.sapdevcenter.com:443/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/` |
 | Proxy Type             | Internet                |
