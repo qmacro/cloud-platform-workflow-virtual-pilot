@@ -1,14 +1,14 @@
 # Prerequisites
 
-There are hardware, software and service prerequisites for participating in this CodeJam.
+There are hardware, software and service prerequisites for participating in this Virtual Event.
 
 ## Hardware
 
-Each participant must have their own laptop with enough admin privileges to be able to install software. You must also be able to access a command line shell (e.g. `cmd.exe` on Windows). The laptop must also be able to connect to the host organization's guest network for Internet access, and have enough power for the whole day.
+Each participant must have their own laptop with enough admin privileges to be able to install software. You must also be able to access a command line shell (e.g. `cmd.exe` on Windows). The laptop must also be able to connect to the Internet.
 
 ## Software
 
-Before the CodeJam day, participants must ensure they have the following installed on their laptops:
+Before the Virtual Event, participants must ensure they have the following installed on their laptops:
 
 - Chrome (latest version) : [https://www.google.com/chrome/](https://www.google.com/chrome/)
 - Postman : [https://www.getpostman.com/downloads/](https://www.getpostman.com/downloads/)
@@ -17,7 +17,7 @@ Participants should also install:
 
 - Docker Desktop : [https://www.docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop) (once installed, test out the installation by following the instructions [here for macOS](https://docs.docker.com/docker-for-mac/) or [here for Windows](https://docs.docker.com/docker-for-windows/), ensuring that you can run the `docker` command line tool)
 
-_Note: Docker Desktop is required to host a container where you will run an instance of the SAP Cloud Connector in one of the exercises. The installation of Docker Desktop is strongly recommended, because not having it means that you will not be able to complete that exercise. However, you can still continue the CodeJam as instructions will be provided describing the appropriate alternative configuration needed._
+_Note: Docker Desktop is required to host a container where you will run an instance of the SAP Cloud Connector in one of the exercises. The installation of Docker Desktop is strongly recommended, because not having it means that you will not be able to complete that exercise. However, you can still continue the Virtual Event as instructions will be provided describing the appropriate alternative configuration needed._
 
 ## Services
 
