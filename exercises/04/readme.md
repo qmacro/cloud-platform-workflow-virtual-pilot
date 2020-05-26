@@ -18,7 +18,7 @@ After completing these steps you'll have created a destination pointing to a spe
 
 Before creating the destination, which is effectively a pointer to a data source, it's worth checking that data source manually and directly. First, so you can see for yourself what you're aiming to get to from within the SAP Cloud Platform, and second, so you know what you're looking for when you access that data source indirectly (through the destination).
 
-The data source is an OData service in the ES5 system, a system to which you should already have access according to the [services section of the prerequisites for this Virtual Event](https://github.com/SAP-samples/cloud-workflow-codejam/blob/master/prerequisites.md#services).
+The data source is an OData service in the ES5 system, a system to which you should already have access according to the [services section of the prerequisites for this Virtual Event](../../prerequisites.md#services).
 
 :point_right: Open up the [EPM_REF_APPS_SHOP_SRV](https://sapes5.sapdevcenter.com/sap/opu/odata/sap/EPM_REF_APPS_SHOP_SRV/?sap-client=002) OData service, taking care to specify client 002 in the URL (following the link here will do that for you).
 
