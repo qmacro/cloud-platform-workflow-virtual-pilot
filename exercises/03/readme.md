@@ -178,7 +178,7 @@ The dialog summary should look something like this:
 
 ### 6. Expose a set of resources in the backend system
 
-While you've established a mapping of a virtual host (that is visible at the SAP Cloud Platform level) to an internal (on-prem) host, there are still no resources available on that host that can be accessed. You must specify these explicitly, and you'll do that now in this step.
+While you've established a mapping of a virtual host (that is visible at the SAP Cloud Platform level) to an internal (on-prem) host, there are still no accessible resources available on that host. You must specify these explicitly, and you'll do that now in this step.
 
 :point_right: In the new "Resources of virtuales5:8000" section that is now visible, add a new resource entry with the "+" icon, specifying the following values and finishing with the "Save" button:
 
@@ -199,7 +199,9 @@ This is the sort of thing that you should see when you've completed this step:
 
 ### 7. Check the connection at the SAP Cloud Platform end
 
-Now the connection is established, you can check it in your SAP Cloud Platform trial subaccount.
+> This option is currently - and temporarily - unavailable for new Feature Set B based accounts, but has been left in as a step in this exercise for Feature Set A based accounts, and also to show you what it would look like.
+
+Now the connection is established, you can also check it in your SAP Cloud Platform trial subaccount.
 
 :point_right: Back on your "CF Trial Subaccount Home" page in the SAP Cloud Platform Cockpit, select the "Connectivity" item in the navigation menu, and within that, choose the "Cloud Connectors" item. You should see your SAP Cloud Connector connection information, plus the "virtuales5" host you exposed. It should look something like this:
 
@@ -216,3 +218,5 @@ You've now got your own SAP Cloud Connector running, connected to your SAP Cloud
 1. What other resource paths might you want to expose in a backend SAP system?
 
 1. Do you know the origin of the "opu" part of the `/sap/opu/odata` URL path and what it represents?
+
+1. Is the specification of "HTTPS" (as opposed to "HTTP") in the virtual-to-internal system mapping significant?
