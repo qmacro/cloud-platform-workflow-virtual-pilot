@@ -10,7 +10,7 @@ After completing these steps you'll have a Fiori launchpad with an app for viewi
 
 There is a sample application project that has everything required to set things up from a platform perspective to be able to interact with the Workflow service in your CF environment.
 
-:point_right: In the SAP Web IDE go to the Editor perspective and use the menu path "File -> New -> Project From Sample Application". Find and select the sample application "Workflow Applications on SAP Fiori Launchpad for Cloud Foundry (Trial)", checking and confirming the license agreement:
+:point_right: In the SAP Web IDE go to the Editor perspective and use the menu path "File -> New -> Project From Sample Application". Find and select the sample application "**Workflow Applications on SAP Fiori Launchpad for Cloud Foundry (Trial)**", checking and confirming the license agreement:
 
 ![sample application selection](sampleappselection.png)
 
@@ -41,11 +41,11 @@ The MTA Editor presents the contents of the file in three sections - "Modules", 
 
 :point_right: Switch between the "Modules" and "Resources" sections to understand these relationships.
 
-The `workflowtilesApprouter` module is the "handle" of a standard application which presents a Portal site. The `workflowtilesFLP` module, when deployed, will cause application and tile definitions to be defined in the FLP site.
+The `workflowtilesApprouter` module is effectively an application which presents a Portal site. The `workflowtilesFLP` module, when deployed, will cause application and tile definitions to be added to the FLP site.
 
 Both modules require a resource called `workflow_workflowtiles` which is basically an instance of the Workflow service, with the name as shown. But we've already got an instance of the Workflow service, so let's make a modification to reflect that now. By doing this directly and manually, we'll start to get a feel for the contents of an `mta.yaml` file and how things relate.
 
-:point_right: Switch from the "MTA Editor" to the "Code Editor" to see the raw YAML, and search for the string `workflow_workflowtiles`. You should find three occurrences, marked here with arrows:
+:point_right: Switch from the "MTA Editor" to the "Code Editor" to see the raw YAML, and search for the string `workflow_workflowtiles`. You should find three occurrences, marked here with a multi-forked arrow:
 
 ```yaml
 ID: sample.workflowtiles.mta.trial
@@ -100,7 +100,7 @@ resources:                                                   |
     type: org.cloudfoundry.managed-service
 ```
 
-The first two references are in the modules' `requires` sections, referring to the third reference, which is the name of the item in the `resources` section. In other words, both the `workflowtilesApprouter` module and the `workflowTilesFLP` module refer to (i.e. require) the `workflow_workflowtiles` resource.
+The first two references are in the modules' `requires` sections, referring to the third reference, which is the name of the item in the `resources` section. In other words, both the `workflowtilesApprouter` module and the `workflowtilesFLP` module refer to (i.e. require) the `workflow_workflowtiles` resource.
 
 As you've already created an instance of the Workflow service in the previous exercise, with the name "workflow", you must modify the references here in this `mta.yaml` file.
 
@@ -118,6 +118,7 @@ As a result of the modifications, each instance of `workflow_workflowtiles` shou
     type: org.cloudfoundry.existing-service
 ```
 
+> In case you're wondering - yes, if you want to, you can also remove the `parameters` part from the above section too; they are only required if a new service instance is to be created.
 
 ### 3. Examine the rest of the content within the project
 
@@ -129,7 +130,7 @@ It's worth taking a few moments to [stare](https://langram.org/2017/02/19/the-be
 
 The `workflowtilesApprouter/` directory contains definitions which will bring about an application in your CF space that allows you to reach the FLP site with the Workflow related tiles. Notice the reference to `/cp.portal` as the starting resource in the `xs-app.json` configuration file.
 
-The `workflowtilesFLP` directory is a Node.js app that will cause a deployment of artifacts to the portal FLP site. The `package.json` file describes the dependency on a portal "deployer" service that is invoked. The `portal-site/` directory, in particular via the `CommonDataModel.json` file, contains details of what those artifacts are. Indeed, the SAP Web IDE has a built-in "Launchpad Editor" that will be invoked when you select the file for editing:
+The `workflowtilesFLP` directory is a Node.js app that will cause a deployment of artifacts to the portal FLP site. The `package.json` file describes the dependency on a portal "deployer" service that is invoked. The `portal-site/` directory, in particular via the `CommonDataModel.json` file, contains details of what those artifacts are. Indeed, the SAP Web IDE has a built-in "Launchpad Editor" that can be invoked when you select the file for editing:
 
 ![Launchpad Editor](launchpadeditor.png)
 
@@ -164,7 +165,7 @@ After a short time the deployment will complete, and you should see a log messag
 
 ```
 Application "workflowtilesApprouter" started
-and available at "p2001351149trial-dev-workflowtilesapprouter.cfapps.eu10.hana.ondemand.com"
+and available at "7c40b1datrial-dev-workflowtilesapprouter.cfapps.us10.hana.ondemand.com"
 ```
 
 This is the URL of the `workflowApprouter` module that has been deployed, and will be specific to your SAP Cloud Platform trial user ID. You can use this URL to get to the FLP site, but instead, let's take another, slightly more long winded but definitely more interesting route.
@@ -215,3 +216,6 @@ Good work!
 1. What do you think the difference between a "workflow instance" and a "workflow definition" is?
 
 1. Can you find out what the ID of the "Monitor Workflow" app is, that is accessed through the two "Monitor Workflow" tiles?
+
+1. Were you able to follow the deployment process in detail? How else might you do that?
+<!-- See https://blogs.sap.com/2020/05/01/terminal-tip-a-cf-remote-monitor-script/ -->
