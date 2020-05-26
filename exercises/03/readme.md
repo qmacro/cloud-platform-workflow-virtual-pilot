@@ -2,15 +2,15 @@
 
 The scenario upon which this Virtual Event is based includes access to an on-prem SAP system, for which the SAP Cloud Connector is required.
 
-_Note: The SAP system we'll be using is not actually on-prem, it's the [public SAP NetWeaver Gateway Demo system](https://blogs.sap.com/2017/06/16/netweaver-gateway-demo-es5-now-in-beta/), known by its System ID "ES5". But for the purposes of understanding and configuring the SAP Cloud Connector, we will treat it as if it is._
+> The SAP system we'll be using is not actually on-prem, it's the [public SAP NetWeaver Gateway Demo system](https://blogs.sap.com/2017/06/16/netweaver-gateway-demo-es5-now-in-beta/), known by its System ID "ES5". But for the purposes of understanding and configuring the SAP Cloud Connector, we will treat it as if it is.
 
 In this exercise you'll set up SAP Cloud Connector, to provide the connection between an on-prem SAP system (ES5) and your subaccount on the SAP Cloud Platform, enabling services and apps running in that subaccount to access specific system endpoints in ES5.
 
 The setup will be done in a container, to isolate SAP Cloud Connector and the software upon which it relies. This is a good approach not only for Virtual Event scenarios like this where attendees' machines are all different, but also for use within work environments. Docker will be used as the container system.
 
-_Note: The following instructions are based in part on the [nzamani/sap-cloud-connector-docker](https://github.com/nzamani/sap-cloud-connector-docker) repository on GitHub. If you want to find out more, check out the blog post "[Installing SAP Cloud Connector into Docker and connecting it to SAP Cloud Platform](https://blogs.sap.com/2018/05/22/installing-sap-cloud-connector-into-docker-and-connecting-it-to-sap-cloud-platform/)" by [Nabi Zamani](https://people.sap.com/pars.man#overview)._
+> The following instructions are based in part on the [nzamani/sap-cloud-connector-docker](https://github.com/nzamani/sap-cloud-connector-docker) repository on GitHub. If you want to find out more, check out the blog post "[Installing SAP Cloud Connector into Docker and connecting it to SAP Cloud Platform](https://blogs.sap.com/2018/05/22/installing-sap-cloud-connector-into-docker-and-connecting-it-to-sap-cloud-platform/)" by [Nabi Zamani](https://people.sap.com/pars.man#overview).
 
-_Note: This exercise assumes you don't already have any processes listening for HTTP requests on port 8443 of your machine._
+> This exercise assumes you don't already have any processes listening for HTTP requests on port 8443 of your machine.
 
 ## Steps
 
@@ -30,7 +30,7 @@ The `container-scc/` directory will contain the build instructions for the Docke
 
 ![SAP JVM download](jvmdownload.png)
 
-_Note: the screenshots here are for illustration purposes - the version numbers of the SAP Cloud Connector and SAP JVM components will most likely be different to the ones you see here._
+> the screenshots here are for illustration purposes - the version numbers of the SAP Cloud Connector and SAP JVM components will most likely be different to the ones you see here.
 
 :point_right: Finally in this step, create a new file called `Dockerfile` in the `container-scc/` directory (noting the capitalization and lack of extension on this file name).
 
@@ -66,7 +66,7 @@ docker build -t scc .
 
 (don't forget the period at the end, denoting "this directory".)
 
-_Note: the build process may take a few mins, as components that make up the image need to be downloaded and then installed._
+> the build process may take a few mins, as components that make up the image need to be downloaded and then installed.
 
 You can look for the image that's produced, with the following command:
 
@@ -121,7 +121,7 @@ In this step you will log on to the SAP Cloud Connector in your browser, and use
 
 :point_right: Open your browser and go to the SAP Cloud Connector administration UI at [https://localhost:8443](https://localhost:8443). Remember that this is only possible because, with the `-p 8443:8443` parameter earlier, you specified that port 8443 in the container (which is where SAP Cloud Connector is *actually* running and listening) should be exposed to your machine, the container's host (where Docker is running), also on port 8443.
 
-_Note: Your browser will likely warn you that the site is insecure, because the certificate that the site presents (via HTTPS) has not been signed by any authority it recognizes. This is OK for what we want to achieve in this Virtual Event, and you should proceed through any warning. It's possible to fix this by installing a signed certificate into the SAP Cloud Connector, but this is beyond the scope of this exercise._
+> Your browser will likely warn you that the site is insecure, because the certificate that the site presents (via HTTPS) has not been signed by any authority it recognizes. This is OK for what we want to achieve in this Virtual Event, and you should proceed through any warning. It's possible to fix this by installing a signed certificate into the SAP Cloud Connector, but this is beyond the scope of this exercise.
 
 :point_right: At the "Cloud Connector Login" page, log in with the default username and password "Administrator" and "manage". You're then prompted to change this password which you should do, selecting the "Save" icon on the right hand side to proceed (leave other options as they are).
 
@@ -151,7 +151,7 @@ At this point, your SAP Cloud Connector, running in a container on your machine,
 
 Now that the connection is established, you can define access to the on-prem backend SAP system that the SAP Cloud Connector will facilitate.
 
-_Note: Remember that (a) the secure tunnel is established *outbound* from the SAP Cloud Connector to the SAP Cloud Platform, not the other way round (i.e. connections cannot be initiated from outside your on-prem landscape) and (b) no on-prem system is accessible unless you specify that it is (a "whitelist" approach)._
+> Remember that (a) the secure tunnel is established *outbound* from the SAP Cloud Connector to the SAP Cloud Platform, not the other way round (i.e. connections cannot be initiated from outside your on-prem landscape) and (b) no on-prem system is accessible unless you specify that it is (a "whitelist" approach).
 
 :point_right: Select the "Cloud To On-Premise" item in the navigation menu on the left hand side, and in the "Mapping Virtual To Internal System" section, create a new system mapping entry with the "+" icon. In the dialog that follows, you can specify the details of your backend SAP system, i.e. the ES5 system:
 
@@ -191,7 +191,7 @@ While you've established a mapping of a virtual host (that is visible at the SAP
 
 This establishes access to OData services, specifically those at path `/sap/opu/odata`. Many standard OData services in an SAP system are available here, and the one we'll use later is too.
 
-_Note: For test purposes, you could also have specified simply `/` as the URL Path to make every HTTP-based resource in the ES5 system available._
+> For test purposes, you could also have specified simply `/` as the URL Path to make every HTTP-based resource in the ES5 system available.
 
 This is the sort of thing that you should see when you've completed this step:
 
