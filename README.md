@@ -22,6 +22,8 @@ If you finish an exercise early, please resist the temptation to continue with t
 
 :point_right: Where there's an action for you to perform, it will be prefixed with this pointing symbol, to help you focus on where you are in each exercise.
 
+> Currently the management tools in SAP Cloud Platform are undergoing renovation, and there is now the concept of tool "[feature sets](https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/caf4e4e23aef4666ad8f125af393dfb2.html)". Throughout this virtual event, the descriptions and screenshots will be from a "Feature Set B" environment.
+
 ### The exercises
 
 Here's an overview of the exercises.
