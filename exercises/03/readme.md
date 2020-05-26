@@ -129,9 +129,9 @@ Next, you're asked to specify an initial subaccount that you want the SAP Cloud 
 
 :point_right: Specify the appropriate details for your trial subaccount, as follows:
 
-- "Region": select the entry that reflects the Cloud Foundry API endpoint URL that is related to the organization connected to your trial subaccount. In other words, you can search by entering `cf.eu10` in the selection search box to find and select "Europe (Frankfurt) - AWS" which corresponds to `cf.eu10.hana.ondemand.com`
+- "Region": select the entry that reflects the Cloud Foundry API endpoint URL that is related to the organization connected to your trial subaccount. In other words, you can search by entering `cf` in the selection search box to find and select the appropriate entry, such as "Europe (Frankfurt) - AWS", which corresponds to `cf.eu10.hana.ondemand.com`, or "US East (VA) - AWS", which corresponds to `cf.us10.hana.ondemand.com`
 
-- "Subaccount": this should be the ID of your trial subaccount, from your "CF Trial Subaccount Home" page, as shown in this screenshot, where `0a25...` is the ID:
+- "Subaccount": this should be the ID of your trial subaccount, from your "CF Trial Subaccount Home" page, as shown in this screenshot, where `b88f...` is the ID:
 
   ![subaccount ID](subaccountid.png)
 
