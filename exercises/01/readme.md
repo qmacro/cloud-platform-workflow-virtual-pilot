@@ -89,7 +89,7 @@ The instance name `workflow` is important as you'll refer to it later.
 > The authorities you specified in the "Specify Parameters (Optional)" step will be needed in a [later exercise](../06/), when you come to call the Workflow API.
 
 
-### 3. Create a role and assign it to yourself
+### 3. Create a role collection and assign it to yourself
 
 Now you have a Workflow service instance in your space, it's time to assign workflow roles to yourself.
 
