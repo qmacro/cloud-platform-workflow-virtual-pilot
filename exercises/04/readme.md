@@ -172,8 +172,8 @@ You're now all set to be able to successfully consume the OData service at the e
 1. When you went to look at the OData service EPM_REF_APPS_SHOP_SRV for the first time at the start of this exercise, what was the resource that was returned?
 <!-- the OData's service document -->
 
-1. What causes the random section of the URL to be generated?
+2. What causes the random section of the URL to be generated?
 <!-- the random-route parameter in the manifest -->
 
-1. What do you think the "Location ID" property is used for? How might we use it here, if we wanted to specify a value?
+3. What do you think the "Location ID" property is used for? How might we use it here, if we wanted to specify a value?
 <!-- for when multiple SCCs are connected to the same subaccount -->
