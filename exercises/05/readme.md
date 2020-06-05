@@ -164,7 +164,7 @@ You should now see your instance. There's plenty of information to examine.
 
 Before finishing this exercise, it's worth going through the process of manually creating a workflow instance again, this time supplying different data.
 
-:point_right: Navigate back to the display of the workflow definition, and use the "Start New Instance" button again. This time, replace the entire test data (relating to the Hamlet book) with the following (which relates to product IDs in the OData service mentioned in the [Services section of the prerequisites(../../prerequisites.md#services)):
+:point_right: Navigate back to the display of the workflow definition, and use the "Start New Instance" button again. This time, replace the entire test data (relating to the Hamlet book) with the following (which relates to product IDs in the OData service mentioned in the [Services section of the prerequisites](../../prerequisites.md#services)):
 
 ```json
 {
