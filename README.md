@@ -36,10 +36,10 @@ Here's an overview of the exercises.
 - [Exercise 04 - Establishing a destination in SAP Cloud Platform](exercises/04)
 - [Exercise 05 - Creating, deploying & instantiating a simple workflow](exercises/05)
 - [Exercise 06 - Exploring the API Hub and the Workflow API](exercises/06)
-- Exercise 07 - Calling the Workflow API from Postman
-- Exercise 08 - Adding a Service Task to the workflow definition
-- Exercise 09 - Adding a User Task to the workflow definition
-- Exercise 10 - Accessing contextual information in a Script Task
+- [Exercise 07 - Calling the Workflow API from Postman](exercises/07)
+- [Exercise 08 - Adding a Service Task to the workflow definition](exercises/08)
+- [Exercise 09 - Adding a User Task to the workflow definition](exercises/09)
+- [Exercise 10 - Accessing contextual information in a Script Task](exercises/10)
 
 ### Further experimentation
 
