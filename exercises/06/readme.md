@@ -152,7 +152,7 @@ You should see a response with an HTTP status code of 201, and a response body &
 {
   "id": "283265c2-a738-11ea-a9c5-eeee0a8b4b0f",
   "definitionId": "orderprocess",
-  "definitionVersion": "2",
+  "definitionVersion": "1",
   "subject": "orderprocess",
   "status": "RUNNING",
   "businessKey": "",
