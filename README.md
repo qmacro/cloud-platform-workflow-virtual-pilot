@@ -4,7 +4,7 @@
 
 This repository contains the material for the virtual event pilot on SAP Cloud Platform Workflow. It is based upon the original [CodeJam - SAP Cloud Platform Workflow](https://github.com/SAP-samples/cloud-workflow-codejam/) content.
 
-Prerequisites and recommendations for this virtual event pilot are documented in the [prerequisites](prerequisites.md) file. 
+Prerequisites and recommendations for this virtual event pilot are documented in the [prerequisites](prerequisites.md) file.
 
 ### Virtual pilot overview
 
@@ -34,7 +34,7 @@ Here's an overview of the exercises.
 - [Exercise 02 - Deploying the Workflow tools](exercises/02/)
 - [Exercise 03 - Installing & configuring the SAP Cloud Connector](exercises/03)
 - [Exercise 04 - Establishing a destination in SAP Cloud Platform](exercises/04)
-- Exercise 05 - Creating, deploying & instantiating a simple workflow
+- [Exercise 05 - Creating, deploying & instantiating a simple workflow](exercises/05)
 - Exercise 06 - Exploring the API Hub and the Workflow API
 - Exercise 07 - Calling the Workflow API from Postman
 - Exercise 08 - Adding a Service Task to the workflow definition
