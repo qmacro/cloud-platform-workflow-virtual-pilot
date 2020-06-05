@@ -35,7 +35,7 @@ You should see something like this:
 
 ![use of variable in URL](varinrequest.png)
 
-:point_right: Notice the use of the `{{endpoints.workflow_rest_api}}` variable in the URL, and the fact also that currently, indicated in the top right of the Postman UI, there is "No Environment" set.
+:point_right: Notice the use of the `{{endpoints.workflow_rest_url}}` variable in the URL, and the fact also that currently, indicated in the top right of the Postman UI, there is "No Environment" set.
 
 So at this point the request in its skeleton form is ready but you need to supply a value for the root of the URL, and also Postman needs to know how -- or more specifically with what credentials -- to request an OAuth token. It's a good idea to configure this in an environment, which is sort of the equivalent of the API Hub environment you configured in the previous exercise.
 
