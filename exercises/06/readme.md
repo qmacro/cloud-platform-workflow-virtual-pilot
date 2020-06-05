@@ -93,7 +93,7 @@ GET /v1/workflow-definitions
 
 :point_right: Select your new API environment in the dropdown selection at the top of the verb/noun list, so that the "MyEnv" environment is shown as selected.
 
-![MyCodeJamEnv selected](envselected.png)
+![MyEnv selected](envselected.png)
 
 :point_right: Use the "Try out" link to expand and explore the API call. You can leave all the parameters as they are, and use the "Execute" button to make the API call.
 
