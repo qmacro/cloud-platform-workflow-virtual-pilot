@@ -11,7 +11,7 @@ Using these features, you can achieve a semi-automated mechanism for creating ne
 After completing these steps you'll know how to instantiate new workflows from Postman (and, by inference, from other API clients and tools). You'll also have a closer feel to what's going on behind the scenes in the SAP API Business Hub with respect to authentication.
 
 
-### 1. Open Postman and import the Workflow CodeJam collection
+### 1. Open Postman and import the Workflow Collection
 
 The API call you made in a previous exercise has been encapsulated into a small Postman collection that you can import and use.
 
@@ -19,7 +19,7 @@ The API call you made in a previous exercise has been encapsulated into a small 
 
 ![import collection](import-collection.png)
 
-:point_right: In the dialog, specify the URL to this [workflowcodejamcollection.json](https://raw.githubusercontent.com/SAP-samples/cloud-workflow-codejam/master/exercises/07/workflowcodejamcollection.json) resource, and use the "Import" button to complete the process.
+:point_right: In the dialog, specify the URL to this [workflowcollection.json](https://raw.githubusercontent.com/qmacro/cloud-platform-workflow-virtual-pilot/master/exercises/07/workflowcollection.json) resource, and use the "Import" button to complete the process.
 
 ### 2. Create a new Postman environment
 
@@ -29,7 +29,7 @@ Within environments you can use variables, and the environment-specific values f
 
 Environments are also separate by design from requests and collections, so that you can share the latter without compromising security by sharing values in the former.
 
-:point_right: Examine how these variables are used, by expanding the hierarchy of the "Workflow CodeJam" collection to reveal and select the POST request "Create new workflow instance", and looking at how the URL of that request is defined.
+:point_right: Examine how these variables are used, by expanding the hierarchy of the "Workflow Collection" to reveal and select the POST request "Create new workflow instance", and looking at how the URL of that request is defined.
 
 You should see something like this:
 
@@ -39,7 +39,7 @@ You should see something like this:
 
 So at this point the request in its skeleton form is ready but you need to supply a value for the root of the URL, and also Postman needs to know how -- or more specifically with what credentials -- to request an OAuth token. It's a good idea to configure this in an environment, which is sort of the equivalent of the API Hub environment you configured in the previous exercise.
 
-:point_right: First, use the "Manage Environments" button (the cog) in the top right to open up a dialog where you can add an environment. In the form that appears, specify "My CodeJam Environment" for the name.
+:point_right: First, use the "Manage Environments" button (the cog) in the top right to open up a dialog where you can add an environment. In the form that appears, specify "My Workflow Environment" for the name.
 
 :point_right: Next, add each of the four properties from the service key data we came across in the previous exercise, as variables in this new environment:
 
