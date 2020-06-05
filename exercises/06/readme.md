@@ -16,7 +16,7 @@ This is the central place for discovery and consumption of APIs - see it as your
 
 The Workflow API is of course documented and available for exploration here in the API Hub.
 
-:point_right: [Search for](https://api.sap.com/search?searchterm=workflow+API&tab=all) the Workflow API - you should find a number of results. The one we're interested in for this CodeJam is the [Workflow API for Cloud Foundry](https://api.sap.com/api/SAP_CP_Workflow_CF/resource). You should see something like this:
+:point_right: [Search for](https://api.sap.com/search?searchterm=workflow+API&tab=all) the Workflow API - you should find a number of results. The one we're interested in here is the [Workflow API for Cloud Foundry](https://api.sap.com/api/SAP_CP_Workflow_CF/resource). You should see something like this:
 
 ![Workflow API summary](workflowapisummary.png)
 
@@ -64,7 +64,7 @@ You should be defaulted to the "Create New Environment" mode.
 | Property       | Value                   |
 | -------------- | ----------------------- |
 | Starting URL   | the value of `endpoints.workflow_rest_url` |
-| Display Name for Environments | MyCodeJamEnv |
+| Display Name for Environments | MyEnv |
 | OAuth 2.0 Client Id | the value of `uaa.clientid` |
 | OAuth 2.0 Secret    | the value of `uaa.clientsecret` |
 | consumersubdomain   | the most significant hostname part of the fully qualified domain name value of `uaa.url` |
@@ -91,7 +91,7 @@ Now you can try out your new API environment by requesting information on the wo
 GET /v1/workflow-definitions
 ```
 
-:point_right: Select your new API environment in the dropdown selection at the top of the verb/noun list, so that the "MyCodeJamEnv" environment is shown as selected.
+:point_right: Select your new API environment in the dropdown selection at the top of the verb/noun list, so that the "MyEnv" environment is shown as selected.
 
 ![MyCodeJamEnv selected](envselected.png)
 
