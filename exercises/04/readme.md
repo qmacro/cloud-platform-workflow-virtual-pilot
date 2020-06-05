@@ -116,7 +116,7 @@ In fact, the successful operation of the app relies on not one but three service
 | Choose Service Plan | Plan: `application` | Plan `lite` | Plan `lite` |
 | Specify Parameters  | Upload the `xs-security.json` file via the "Browse" button | (none) | (none) |
 | Assign Application  | (none) | (none) | (none) |
-| Confirm             | Instance Name: `codejam-xsuaa` | Instance Name: `codejam-connectivity` | Instance Name: `codejam-destination` |
+| Confirm             | Instance Name: `test-xsuaa` | Instance Name: `test-connectivity` | Instance Name: `test-destination` |
 
 > It's important that you use the instance names specified here, as they are referenced by name in the app's [`manifest.yml`](dest-test-app/manifest.yml) file.
 
@@ -131,7 +131,7 @@ Now the service instances are in place, it's time to deploy the app itself.
 
 In a few moments, your app should be shown in the list as in the green "Started" state.
 
-:point_right: Select its name ("codejam-dest-test") and select the URL in the "Application Routes" section of the app's "Overview" page; the URL will contain a random string in the first part, to ensure that each of your apps deployed have unique hostnames:
+:point_right: Select its name ("my-dest-test") and select the URL in the "Application Routes" section of the app's "Overview" page; the URL will contain a random string in the first part, to ensure that each of your apps deployed have unique hostnames:
 
 ![app route with random URL](approuteurl.png)
 
@@ -145,7 +145,7 @@ You'll be using data from the Products entityset in the OData service you've jus
 :point_right: Append `Products` to the end of the existing URL, so it looks like this:
 
 ```
-https://codejam-dest-test-<randomstring>.cfapps.<region>.hana.ondemand.com/Products
+https://my-dest-test-<randomstring>.cfapps.<region>.hana.ondemand.com/Products
 ```
 
 :point_right: Explore the data that is returned - you should see a list of products, with the sort of properties you'd expect from a product database, such as an ID, name, description, information about stock quantity, and so on.
@@ -153,7 +153,7 @@ https://codejam-dest-test-<randomstring>.cfapps.<region>.hana.ondemand.com/Produ
 If you prefer looking at JSON rather than XML, append the query parameter `$format=json` to the URL, so that it looks like this:
 
 ```
-https://codejam-dest-test-<randomstring>.cfapps.<region>.hana.ondemand.com/Products?$format=json
+https://my-dest-test-<randomstring>.cfapps.<region>.hana.ondemand.com/Products?$format=json
 ```
 
 _Note: It's at this point you might want to take advantage of the [recommendations](../../prerequisites.md#recommendations) to install formatters for JSON and XML in Chrome._
