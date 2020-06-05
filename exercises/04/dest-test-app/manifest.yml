@@ -1,12 +1,12 @@
 ---
 applications:
 
-- name: codejam-dest-test
+- name: my-dest-test
   random-route: true
   buildpacks:
     - nodejs_buildpack
   memory: 128M
   services:
-    - codejam-xsuaa
-    - codejam-connectivity
-    - codejam-destination
+    - test-xsuaa
+    - test-connectivity
+    - test-destination
