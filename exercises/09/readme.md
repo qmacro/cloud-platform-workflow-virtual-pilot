@@ -46,7 +46,7 @@ Even though you've only configured the minimum, you can still see the raw result
 
 :point_right: In the "User Interface" tab of the "User Task Properties", the properties "HTML5 App Name" and "SAPUI5 Component" are required. These relate to the default "Type" that is pre-selected ("SAPUI5 Component"). Specify the dummy value "x" for each of them.
 
-> This is the place where you'd normally specify details of a custom UI5 component that is to be used to represent the details of the user task in the My Inbox app. Building a custom UI5 component for this is beyond the scope of these CodeJam excercises, but we can take advantage of the settings required by providing dummy values for both the properties. The result will be the ability to deploy the modified workflow definition (because the validity of the component details is only an issue at runtime), and a half-empty but understandable user task entry in the My Inbox app, which will be fine for us for now.
+> This is the place where you'd normally specify details of a custom UI5 component that is to be used to represent the details of the user task in the My Inbox app. Building a custom UI5 component for this is beyond the scope of these exercises, but we can take advantage of the settings required by providing dummy values for both the properties. The result will be the ability to deploy the modified workflow definition (because the validity of the component details is only an issue at runtime), and a half-empty but understandable user task entry in the My Inbox app, which will be fine for us for now.
 
 ![user interface details](uidetails.png)
 
@@ -104,6 +104,8 @@ At this point you're presented with a simple form designer, which will allow you
 :point_right: Create a series of sections and fields as shown in the screenshot below, taking care to specify the context path values exactly (pay attention to upper/lower case details). For all fields except for the "Your comments" field, use the field properties on the right hand side to set the "Mode" to "Display-Only".
 
 ![form fields](formfields.png)
+
+> Notice that the letter "I"s in the above context paths are capitalized, i.e. `productInfo` and `Id`.
 
 :point_right: In the properties for the "Your comments" field, specify "Text Area" for the "UI Control" property (to produce a space large enough for input when the field is rendered).
 
