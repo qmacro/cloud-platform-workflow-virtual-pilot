@@ -31,7 +31,7 @@ In the following steps we'll use a Script Task to access this information.
 
 > Don't forget that you can use the arrangement buttons to tidy up the definition diagram like you did in [Exercise 09](../09#2-add-a-user-task-to-the-definition).
 
-The main purpose of this Script Task is to prepare a message that can eventually be sent to the requestor (the sending of the message will be left as an activity to be completed after the CodeJam). So name this Script Task appropriately.
+The main purpose of this Script Task is to prepare a message that can eventually be sent to the requestor (the sending of the message will be left as an activity to be completed after this event finishes). So name this Script Task appropriately.
 
 :point_right: Set the "Name" property in the "Script Task Properties" to "Prepare Message".
 
@@ -82,7 +82,9 @@ $.context.product = product;
 $.context.usertaskinfo = $.usertasks.usertask1.last;
 ```
 
-:point_right: Save the workflow definition (you've saved the Script Task file but you've also made changes to the definition itself, remember) and then follow the usual "build/deploy" flow. Once the deployment is complete, create a new instance using Postman as you've done before.
+:point_right: Save the workflow definition (you've saved the Script Task file but you've also made changes to the definition itself, remember) and then follow the usual "build/deploy" flow.
+
+:point_right: Once the deployment is complete, create a new instance using Postman as you've done before.
 
 
 ### 3. Process the User Task and check the context
