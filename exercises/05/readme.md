@@ -8,7 +8,7 @@ After completing these steps you'll understand the general flow of development, 
 
 ### 1. Create a new Workflow project in the SAP Web IDE Full-Stack
 
-:point_right: Open up the SAP Web IDE Full-Stack (you may have it already open from the previous exercise) and create a new project with menu path "File -> New -> Project from Template". In the steps that follow, make these selections:
+:point_right: Open up the SAP Web IDE Full-Stack (you may have it already open from a previous exercise) and create a new project with menu path "File -> New -> Project from Template". In the steps that follow, make these selections:
 
 **Template Selection**
 
@@ -91,7 +91,7 @@ But we already have a Workflow service instance called "workflow" so we need to 
 
 :point_right: Change the two references `workflow_OrderFlow` to `workflow`, i.e. both in the "requires" section of the module, and in the "name" section of the resource. Also change the "type" of the resource to `org.cloudfoundry.existing-service`. (You did something very similar to this in [exercise 02](../02#2-modify-the-mtayaml-file-to-reflect-the-existing-workflow-service-instance).)
 
-:point_right: Change the service-plan of workflow resource from `standard` to `lite`
+:point_right: Remove the `parameters` section of the `workflow` resource definition (it's not needed when specifying an existing service instance).
 
 The result should look like this:
 
@@ -109,9 +109,6 @@ modules:
           content-target: true
 resources:
   - name: workflow
-    parameters:
-      service-plan: lite
-      service: workflow
     type: org.cloudfoundry.existing-service
 ```
 
@@ -167,7 +164,7 @@ You should now see your instance. There's plenty of information to examine.
 
 Before finishing this exercise, it's worth going through the process of manually creating a workflow instance again, this time supplying different data.
 
-:point_right: Navigate back to the display of the workflow definition, and use the "Start New Instance" button again. This time, replace the entire test data (relating to the Hamlet book) with the following:
+:point_right: Navigate back to the display of the workflow definition, and use the "Start New Instance" button again. This time, replace the entire test data (relating to the Hamlet book) with the following (which relates to product IDs in the OData service mentioned in the [Services section of the prerequisites(../../prerequisites.md#services)):
 
 ```json
 {
