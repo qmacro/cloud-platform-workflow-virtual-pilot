@@ -59,7 +59,7 @@ When you configure an environment, you need to supply endpoint and credential in
 
 You should be defaulted to the "Create New Environment" mode.
 
-:point_right: Specify the following values, noting that the Starting URL selection needs to be based on the fact that you are using your trial account in the EU10 region, and indeed should reflect the value of the `endpoints.workflow_rest_url` property:
+:point_right: Specify the following values, noting that the Starting URL selection should reflect the value of the `endpoints.workflow_rest_url` property, including the particular region:
 
 | Property       | Value                   |
 | -------------- | ----------------------- |
@@ -74,10 +74,10 @@ You should be defaulted to the "Create New Environment" mode.
 
 Regarding the values for the properties "consumersubdomain" and "landscapehost", these are parts that contribute towards the generated value for "Token URL". Here's an example:
 
-- the value of `uaa.url` is `https://p2001351149trial.authentication.eu10.hana.ondemand.com`
-- the value of "consumersubdomain" should be `p2001351149trial`
-- the value of "landscapehost" should be `eu10.hana.ondemand.com`
-- the resulting "Token URL" should be `https://p2001351149trial.authentication.eu10.hana.ondemand.com/oauth/token`
+- the value of `uaa.url` is `https://7c40b1datrial.authentication.us10.hana.ondemand.com`
+- the value of "consumersubdomain" should be `7c40b1datrial`
+- the value of "landscapehost" should be `us10.hana.ondemand.com`
+- the resulting "Token URL" should be `https://7c40b1datrial.authentication.us10.hana.ondemand.com/oauth/token`
 
 Don't forget to save the settings when you're done.
 
