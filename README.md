@@ -2,7 +2,9 @@
 
 ## Description
 
-This repository contains the material for the virtual event pilot on SAP Cloud Platform Workflow. Prerequisites and recommendations for this virtual event pilot are documented in the [prerequisites](prerequisites.md) file.
+This repository contains the material for the virtual event pilot on SAP Cloud Platform Workflow. It is based upon the original [CodeJam - SAP Cloud Platform Workflow](https://github.com/SAP-samples/cloud-workflow-codejam/) content.
+
+Prerequisites and recommendations for this virtual event pilot are documented in the [prerequisites](prerequisites.md) file. 
 
 ### Virtual pilot overview
 
